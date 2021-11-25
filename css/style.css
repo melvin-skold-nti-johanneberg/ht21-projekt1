@@ -1,3 +1,8 @@
+* {
+    font-family: 'Mukta', sans-serif;
+}
+
+
 #wrapper {
     display: grid;
     grid-template-areas:
@@ -11,13 +16,17 @@
 
 body {
     margin: 0px;
+    background-color: rgb(39, 39, 39);
 }
 
 nav {
     display: flex;
     grid-area: nv;
-    background-color: white;
+    background-color: rgb(39, 39, 39);
     justify-content: center;
+    border-bottom: #5E8C6A 4px solid;
+    -webkit-box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.78); 
+    box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.78);
 }
 
 
@@ -37,13 +46,14 @@ li {
     flex-wrap: nowrap;
     padding-left: 7.6vw;
     padding-right: 7.6vw;
-    border-bottom: orange 0.4em solid;
-    padding-top: 0.8em;
+    padding-top: 0.6em;
+    color: white;
+    white-space: nowrap;
 }
 
 li:hover {
-    background-color: rgb(39, 39, 39);
-    color: orange;
+    background-color: rgb(56, 56, 56);
+    color: white;
 }
 
 
@@ -53,4 +63,7 @@ main {
 
 footer {
     grid-area: ft;
+    background-color: rgb(39, 39, 39);
+    justify-content: center;
+    border-top: #5E8C6A 4px solid;
 }
