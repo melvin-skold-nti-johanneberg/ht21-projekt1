@@ -14,6 +14,15 @@
     grid-template-rows: 3em auto 3em;
 }
 
+#wrapper2 {
+    display: grid;
+    grid-template-areas: 
+    "nv nv"
+    "mn mn"
+    "ft ft"
+    ;
+}
+
 body {
     margin: 0px;
     background-color: rgb(243, 243, 243);
@@ -65,8 +74,8 @@ footer {
 }
 
 #logo {
-    height: auto;
-    padding-top: 0em;
+    height: 2em;
+    margin: 0em;
 }
 
 #new {
@@ -110,6 +119,10 @@ p {
     display: flex;
     justify-content: center;
     font-size: 2em;
+}
+
+#pmeny {
+    font-size: 1em;
 }
 
 a {
