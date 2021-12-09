@@ -6,9 +6,9 @@
 #wrapper {
     display: grid;
     grid-template-areas:
-    "nv nv"
-    "mn mn"
-    "ft ft"
+    "nv"
+    "mn"
+    "ft"
     ;
     height: 100vh;
     grid-template-rows: 3em auto 3em;
@@ -17,10 +17,12 @@
 #wrapper2 {
     display: grid;
     grid-template-areas: 
-    "nv nv"
-    "mn mn"
-    "ft ft"
+    "nv"
+    "m2"
+    "ft"
     ;
+    grid-template-rows: 3em auto 3em;
+    height: 100vh;
 }
 
 body {
@@ -36,6 +38,9 @@ nav {
     border-bottom: #5E8C6A 4px solid;
     -webkit-box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.78); 
     box-shadow: 0px 5px 25px 8px rgba(0,0,0,0.25);
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 
@@ -53,8 +58,8 @@ ul {
 li {
     display: flex;
     flex-wrap: nowrap;
-    padding-left: 7.6vw;
-    padding-right: 7.6vw;
+    padding-left: 7.7vw;
+    padding-right: 7.7vw;
     padding-top: 0.6em;
     color: rgb(0, 0, 0);
     white-space: nowrap;
@@ -110,6 +115,10 @@ h2 {
     grid-template-columns: 50% 50%;
 }
 
+#main2 {
+    grid-area: m2;
+}
+
 #article1 {
     grid-area: in;
     background-color: rgb(223, 223, 223);
@@ -121,11 +130,27 @@ p {
     font-size: 2em;
 }
 
-#pmeny {
+.pmeny {
     font-size: 1em;
+    margin-left: 23em;
+    margin-right: 23em;
+    
 }
 
 a {
     text-decoration: none;
     color: black;
+}
+
+#sc1 {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 1em;
+}
+
+#title {
+    margin-top: 1em;
+    text-transform: uppercase;
 }
