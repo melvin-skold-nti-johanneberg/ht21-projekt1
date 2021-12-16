@@ -117,6 +117,10 @@ h2 {
 
 #main2 {
     grid-area: m2;
+    display: grid;
+    grid-template-areas: 
+    "sc1 sc3"
+    ;
 }
 
 #article1 {
@@ -137,6 +141,14 @@ p {
     
 }
 
+.pos {
+    font-size: 1em;
+    margin-left: 6em;
+    margin-right: 6em;
+    display: flex;
+    justify-content: flex-end;
+}
+
 a {
     text-decoration: none;
     color: black;
@@ -144,6 +156,11 @@ a {
 
 #sc1 {
     text-align: center;
+    grid-area: sc1;
+}
+
+#sc3 {
+    grid-area: sc3;
 }
 
 h3 {
@@ -154,3 +171,9 @@ h3 {
     margin-top: 1em;
     text-transform: uppercase;
 }
+
+hr {
+    width: 10%;
+}
+
+
